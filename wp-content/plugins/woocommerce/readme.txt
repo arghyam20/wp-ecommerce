@@ -1,10 +1,10 @@
 === WooCommerce ===
 Contributors: automattic, woocommerce, mikejolley, jameskoster, claudiosanches, rodrigosprimo, peterfabian1000, vedjain, jamosova, obliviousharmony, konamiman, sadowski, wpmuguru, royho, barryhughes-1, claudiulodro, tiagonoronha, ryelle, levinmedia, aljullu, nerrad, joshuawold, assassinateur, haszari, mppfeiffer, nielslange, opr18, ralucastn, tjcafferkey, danielwrobert, patriciahillebrandt, albarin, dinhtungdu, imanish003, karolmanijak, sunyatasattva, alexandrelara, gigitux, danieldudzic, samueljseay, alexflorisca, opr18, tarunvijwani, pauloarromba, saadtarhi, bor0, kloon, coreymckrill, jorgeatorres, leifsinger, neosinner
 Tags: online store, ecommerce, shop, shopping cart, sell online
-Requires at least: 6.7
-Tested up to: 6.8
+Requires at least: 6.8
+Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 10.1.2
+Stable tag: 10.6.0
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -144,7 +144,7 @@ Check out [Frequently Asked Questions](https://woocommerce.com/document/frequent
 
 * PHP 7.4 or greater is required (PHP 8.0 or greater is recommended)
 * MySQL 5.5.5 or greater, OR MariaDB version 10.1 or greater, is required
-* WordPress 6.7 or greater
+* WordPress 6.8 or greater
 * (Recommended) WordPress [memory limit](https://woocommerce.com/document/increasing-the-wordpress-memory-limit/) of 256 MB or greater.
 * (Recommended) [HTTPS](https://woocommerce.com/document/ssl-and-https/) support.
 
@@ -170,16 +170,13 @@ WooCommerce comes with some sample data you can use to see how products look; im
 
 == Changelog ==
 
-= 10.2.1 2025-09-22 =
+= 10.6.1 2026-03-12 =
 
 **WooCommerce**
 
-* Fix - Address update script issue where refunded $order may not exist, and disable refunded orders tool. [#61022](https://github.com/woocommerce/woocommerce/pull/61022)
-* Fix - Downgrade Emogrifier dependency to avoid conflict [#60997](https://github.com/woocommerce/woocommerce/pull/60997)
-* Fix - Fix product price display in RTL languages [#61000](https://github.com/woocommerce/woocommerce/pull/61000)
-* Update - Improve template slug recognition in mechanism registering product blocks. Assure compatibility with WordPress 6.9 [#61009](https://github.com/woocommerce/woocommerce/pull/61009)
-* Dev - Replace deprecated core/edit-site methods with core/editor methods [#61009](https://github.com/woocommerce/woocommerce/pull/61009)
-* Dev - Stop relying on deprecated core/edit-site methods [#61009](https://github.com/woocommerce/woocommerce/pull/61009)
+* Fix - Add to Cart: fix validation of attributes with multi-word names [#63647](https://github.com/woocommerce/woocommerce/pull/63647)
+* Fix - Place newly installed payment gateways above offline payment methods instead of at the bottom of the list. [#63648](https://github.com/woocommerce/woocommerce/pull/63648)
+* Fix - Show shipping package title as "Shipment" instead of "Shipment 1" [#63649](https://github.com/woocommerce/woocommerce/pull/63649)
 
 
 [See changelog for all versions](https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/changelog.txt).
