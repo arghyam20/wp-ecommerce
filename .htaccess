@@ -1,3 +1,8 @@
+RewriteEngine On
+RewriteCond %{HTTP:Authorization} ^(.*)
+RewriteRule ^(.*) - [E=HTTP_AUTHORIZATION:%1]
+
+
 
 # BEGIN WordPress
 # The directives (lines) between "BEGIN WordPress" and "END WordPress" are
@@ -14,3 +19,5 @@ RewriteRule . /wp-ecommerce/index.php [L]
 </IfModule>
 
 # END WordPress
+
+

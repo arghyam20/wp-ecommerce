@@ -50,8 +50,10 @@ add_action('init', function () {
 });
 
 // ─── REST API ─────────────────────────────────────────────────────────────────
+require_once THEME_DIR . '/includes/api-auth.php';
 require_once THEME_DIR . '/includes/api-helpers.php';
 require_once THEME_DIR . '/includes/api-endpoints.php';
+require_once THEME_DIR . '/includes/api-cart.php';
 
 // ─── Mail ─────────────────────────────────────────────────────────────────────
 add_filter('wp_mail_content_type', fn() => 'text/html');

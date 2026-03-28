@@ -104,3 +104,6 @@ require_once ABSPATH . 'wp-settings.php';
 header('Access-Control-Allow-Origin: http://localhost:3000');
 header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS');
 header('Access-Control-Allow-Headers: Content-Type, Authorization');
+
+define('JWT_AUTH_SECRET_KEY', 'my_super_secret_123!');
+define('JWT_AUTH_CORS_ENABLE', true);
